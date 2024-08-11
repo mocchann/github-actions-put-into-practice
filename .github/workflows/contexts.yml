@@ -8,6 +8,6 @@ jobs:
       - run: echo "${{ github.run_id }}"
       - run: echo "${{ github.head_ref }}"
       - run: echo "${{ github.workspace }}"
-      - run: echo "${{ github.repositoty }}"
-      - run: echo "${{ github.repositoty_owner }}"
+      - run: echo "${{ github.repository }}"
+      - run: echo "${{ github.repository_owner }}"
       - run: echo "${{ github.event }}"
