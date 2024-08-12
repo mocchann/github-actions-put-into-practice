@@ -11,4 +11,4 @@ jobs:
           LITERAL_NUMBER: ${{ 1234 }}
           LITERAL_STRING: ${{ 'Hello' }}
           LITERAL_OMIT_STRING: World
-      - run: echo "${{ github.event.*.html_url }}"
+      - run: echo "${{ github.event.*.html_url[0] }}"
