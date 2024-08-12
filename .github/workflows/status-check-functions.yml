@@ -1,5 +1,8 @@
 name: Status check functions
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   fail:
     runs-on: ubuntu-latest

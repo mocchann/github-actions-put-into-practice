@@ -1,5 +1,8 @@
 name: Conditions workflow
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   skip-or-run:
     if: ${{ github.actor == 'octocat' }}
