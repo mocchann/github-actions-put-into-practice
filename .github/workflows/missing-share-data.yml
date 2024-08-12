@@ -1,5 +1,8 @@
 name: Missing share data
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   share:
     runs-on: ubuntu-latest
