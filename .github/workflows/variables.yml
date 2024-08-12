@@ -1,6 +1,8 @@
 name: Variables
 on:
-  push
+  push:
+    branches:
+      - main
 jobs:
   runs-on: ubuntu-latest
   env:
