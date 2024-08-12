@@ -1,5 +1,8 @@
 name: Generate functions
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   generate:
     runs-on: ubuntu-latest
