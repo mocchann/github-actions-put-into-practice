@@ -1,5 +1,8 @@
 name: Hash functions
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   hash:
     runs-on: ubuntu-latest
