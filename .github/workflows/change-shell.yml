@@ -3,9 +3,11 @@ on: push
 jobs:
   print:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     steps:
-      - shell: bash
-        run: echo "${SHELL}"
+      - run: echo "${SHELL}"
       - shell: python
         run: |
           import os
