@@ -2,7 +2,7 @@ name: GITHUB_ENV
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   share:
     runs-on: ubuntu-latest

@@ -2,7 +2,7 @@ name: Hello
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   hello:
     runs-on: ubuntu-latest

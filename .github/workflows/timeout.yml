@@ -2,7 +2,7 @@ name: Timeout
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   sleep:
     runs-on: ubuntu-latest

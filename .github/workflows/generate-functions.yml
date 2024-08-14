@@ -2,7 +2,7 @@ name: Generate functions
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   generate:
     runs-on: ubuntu-latest
