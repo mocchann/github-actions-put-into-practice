@@ -1,9 +1,11 @@
 name: Concurrency
-on: push
+on:
+  push:
+    branches:
+      - main
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref}}
   cancel-in-progress: true
-
 jobs:
   sleep:
     runs-on: ubuntu-latest
