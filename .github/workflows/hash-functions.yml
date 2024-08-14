@@ -2,7 +2,7 @@ name: Hash functions
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   hash:
     runs-on: ubuntu-latest

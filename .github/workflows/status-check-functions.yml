@@ -2,7 +2,7 @@ name: Status check functions
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   fail:
     runs-on: ubuntu-latest

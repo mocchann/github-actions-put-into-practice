@@ -2,7 +2,7 @@ name: Compare functions
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   compare:
     runs-on: ubuntu-latest

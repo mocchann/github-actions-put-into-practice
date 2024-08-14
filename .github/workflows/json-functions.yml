@@ -2,7 +2,7 @@ name: JON functions
 on:
   push:
     branches:
-      - main
+      - test
 jobs:
   dump:
     runs-on: ubuntu-latest
