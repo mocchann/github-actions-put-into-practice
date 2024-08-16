@@ -1,5 +1,8 @@
 name: Artifacts
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   upload:
     runs-on: ubuntu-latest
