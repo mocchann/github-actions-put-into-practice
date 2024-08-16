@@ -1,5 +1,8 @@
 name: Share job data
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   before:
     runs-on: ubuntu-latest

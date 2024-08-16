@@ -1,5 +1,8 @@
 name: Sequential jobs
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   first:
     runs-on: ubuntu-latest
