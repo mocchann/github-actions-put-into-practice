@@ -1,0 +1,13 @@
+name: Bash tracing
+on:
+  push:
+    branches:
+      - test
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set -x
+          date
+          hostname
