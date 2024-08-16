@@ -1,5 +1,8 @@
 name: Manual matrix
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   print:
     strategy:
