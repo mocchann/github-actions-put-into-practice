@@ -1,5 +1,8 @@
 name: Dump
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   debug:
     runs-on: ubuntu-latest
