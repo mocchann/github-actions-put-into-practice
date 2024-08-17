@@ -24,3 +24,9 @@ runs:
     - id: current
       run: echo "date=$(date)" >> "${GITHUB_OUTPUT}"
       shell: bash
+# JavaScriptアクションの場合
+  # using: node20
+  # main: main.js
+# Dockerアクションの場合
+  # using: docker
+  # image: docker://alpine:latest
