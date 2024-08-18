@@ -1,0 +1,8 @@
+<!-- リポジトリ全体のコードオーナーを設定 -->
+* @mocchann
+
+<!-- 特定ファイル種別のみコードオーナーをTeamに設定
+*.txt @example-org/octocat-team -->
+
+<!-- 特定ディレクトリは以下のコードオーナーを、複数アカウントへ設定する
+.github/workflow/ @github @example-org/octocat-team -->
