@@ -1,5 +1,8 @@
 name: OpenID Connect
-on: push
+on:
+  push:
+    branches:
+      - test
 env:
   ROLE_ARN: arn:aws:iam::${{ secrets.AWS_ID }}:role/${{ secrets.ROLE_NAME }}
   SESSION_NAME: gh-oidc-${{ github.run_id }}-${{ github.run_attempt }}
