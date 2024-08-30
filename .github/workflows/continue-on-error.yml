@@ -1,5 +1,8 @@
 name: Continue on Error
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   failure:
     runs-on: ubuntu-latest

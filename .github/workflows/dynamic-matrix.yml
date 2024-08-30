@@ -1,5 +1,8 @@
 name: Dynamic matrix
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   prepare:
     runs-on: ubuntu-latest
