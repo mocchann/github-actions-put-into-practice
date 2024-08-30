@@ -1,0 +1,12 @@
+name: Continue on Error
+on:
+  push:
+    branches:
+      - test
+jobs:
+  failure:
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1
+        continue-on-error: true
+      - run: echo "Success"
