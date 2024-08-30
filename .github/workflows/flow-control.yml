@@ -1,5 +1,8 @@
 name: Flow control
-on: push
+on:
+  push:
+    branches:
+      - test
 jobs:
   run:
     runs-on: ubuntu-latest
