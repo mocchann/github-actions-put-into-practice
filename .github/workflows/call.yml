@@ -11,7 +11,7 @@ jobs:
       contents: read
       pull-requests: write
   print:
-    needs: call
+    needs: [call]
     runs-on: ubuntu-latest
     steps:
       - run: echo "Result> ${MESSAGE}"
