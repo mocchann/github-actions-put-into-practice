@@ -1,0 +1,13 @@
+name: conftest
+on:
+  push:
+    branches:
+      - test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" \
+          openpolicyagent/conftest test --policy policy/ .github/workflows/

@@ -1,5 +1,8 @@
 name: Call
-on: pull_request
+on:
+  push:
+    branches:
+      - test
 jobs:
   call:
     uses: ./.github/workflows/reusable-workflows.yml
