@@ -1,5 +1,8 @@
 name: Static Application Security Testing
-on: pull_request
+on:
+  push:
+    branches:
+      - test
 jobs:
   test:
     runs-on: ubuntu-latest
