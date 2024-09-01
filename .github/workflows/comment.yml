@@ -1,5 +1,8 @@
 name: Comment
-on: pull_request
+on:
+  push:
+    branches:
+      - test
 
 jobs:
   comment:

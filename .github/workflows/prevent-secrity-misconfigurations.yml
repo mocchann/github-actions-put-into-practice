@@ -1,5 +1,8 @@
 name: Prevent secrity misconfigurations
-on: pull_request
+on:
+  push:
+    branches:
+      - test
 jobs:
   scan:
     runs-on: ubuntu-latest
