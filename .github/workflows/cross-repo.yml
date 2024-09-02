@@ -9,12 +9,22 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
+      # GitGub App token Actionを使う場合
+      # - id: create
+      #   uses: actions/create-github-app-token@v1
+      #   with:
+      #     app-id: ${{ secrets.APP_ID }}
+      #     private-key: ${{ secrets.PRIVATE_KEY }}
+      #     repositories: ${{ env.TARGET_REPO }}
+
+      # Scriptでトークンを取得する場合
+      - uses: actions/checkout@v4
       - id: create
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
-          repositories: ${{ env.TARGET_REPO }}
+        run: .github/scripts/token.sh
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.repository_owner}}/${{ env.TARGET_REPO }}
